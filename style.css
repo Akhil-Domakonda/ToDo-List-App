@@ -40,6 +40,12 @@ p {
   padding: 0.4em 0.7em;
   border-radius: 0.3em;
   font-size: 1em;
+  cursor: pointer;
+}
+
+.addTask button:hover {
+  background-color: #567eb4;
+  color: #fff;
 }
 
 .addTask input,
@@ -133,6 +139,7 @@ select:disabled {
   border: solid 1px;
   padding: 0.2em 0.4em;
   border-radius: 0.2em;
+  cursor: pointer;
 }
 .editButton {
   color: #567eb4;
