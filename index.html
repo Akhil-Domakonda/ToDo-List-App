@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/5b1d1a998e.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>ToDo List</title>
   </head>
   <body>
@@ -20,17 +21,45 @@
         <select name="task-satus" id="task-satus">
           <option value="Todo">To Do</option>
           <option value="InProgress">In Progress</option>
-          <option value="Todo">Completed</option>
+          <option value="Completed">Completed</option>
         </select>
         <button class="add">Add task</button>
       </div>
 
-      <div class="task-conatiner">
+      <div class="task-container">
         <div class="task-header">
-          <div class="header-item">Task Name</div>
-          <div class="header-item">Status</div>
-          <div class="header-item">Edit</div>
-          <div class="header-item">Remove</div>
+          <div class="item1">Task Name</div>
+          <div class="item2">Status</div>
+          <div class="item3">Edit</div>
+          <div class="item4">Remove</div>
+        </div>
+
+        <div class="item">
+          <div class="item1">
+            <input
+              type="text"
+              class="item-input"
+              value="Buy Grocery"
+              disabled
+            />
+          </div>
+          <div class="item2">
+            <select name="item-status" id="" disabled="disabled">
+              <option value="Todo">To Do</option>
+              <option value="InProgress">In Progress</option>
+              <option value="Completed">Completed</option>
+            </select>
+          </div>
+          <div class="item3">
+            <button class="editButton">
+              <i class="fa-solid fa-pen"></i>
+            </button>
+          </div>
+          <div class="item4">
+            <button class="removeButton">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </div>
         </div>
       </div>
     </section>
